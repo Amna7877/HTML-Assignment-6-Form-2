@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact Form</title>
+  <style>
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background: linear-gradient(to right,#74ebdb, #acb6e5);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin:0;
+    }
+    
+   .form-container{
+     background-color: white;
+     padding:30px;
+     border-radius:10px;
+     box-shadow:0 0 20px rgba(0,0,0,0.1)
+     width:100%;
+     max-width:400px;
+   }
+.form-container h2{
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px ;
+  font-weight: bold;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+text area {
+  resize: vertical;
+  height:100px
+}
+
+ button {
+   background-color: #4CAF50;
+   color: white ;
+   padding: 12px;
+   width: 100%;
+   border: none;
+   border-radius: 5px ;
+   font-size: 16px ;
+   cursor: pointer;
+ }
+ 
+ button:hover{
+   background-color: #45a049;
+ }
+  </style>
+</head>
+<body>
+  
+  <div class="form-container">
+    <h2>Contact Us</h2>
+    <form>
+      
+      <div class="form-group">
+        <label for="name">Name:</label>
+        <input type="text"
+        name="name"placeholder="Your full name " required>
+      </div>
+      
+      <div class="form-group">
+        <label for="email">Email:</label>
+        <input type="email " id="email" name="email" 
+        placeholder="Your email address" required>
+      </div>
+      
+      <div class="form-group">
+        <lable for="password">Password:</lable>
+        <input type="password" id="password" name="password " placeholder="Create a password" required>
+      </div>
+      <div class="form-group">
+        <label for="feedback">Feedback:</label>
+        <textarea id="feedback" name="feedback" placeholder="Type your feedback here...."></textarea>
+      </div>
+      
+      <button type="submit">Send </button>
+      
+    </form>
+  </div>
+  
+</body>
+</html>
